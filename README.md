@@ -36,7 +36,7 @@ This project contains the following layers:
 - Postman or Swagger for testing
 If you're testing on Postman, import the shared collection into Postman, copy the sample Payloads from this documentation, run the cloned project to start testing.
 
-### 📥 Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/AuthenticationAPI.git
