@@ -34,13 +34,16 @@ This project contains the following layers:
 - Postman or Swagger for testing
 If you're testing on Postman, import the shared collection into Postman, copy the sample Payloads from this documentation, run the cloned project to start testing.
 
+---
+
 ### Clone the Repository
 
-```bash
+
 git clone https://github.com/your-username/AuthenticationAPI.git
 cd AuthenticationAPI
 
 ---
+
 ## Run this project
 
 You can run this project by running the code below:
@@ -49,6 +52,7 @@ dotnet run --project Auth.API
 Navigate to https://localhost:7291/swagger/index.html on your browser to explore the API.
 
 ---
+
 ## API Endpoints
 
 | Method | Route              | Description                    |
@@ -56,8 +60,10 @@ Navigate to https://localhost:7291/swagger/index.html on your browser to explore
 | POST   | /api/v1/userauth/register | Register new user              |
 | POST   | /api/v1/userauth/login    | Login and receive JWT          |
 | |
+
 ---
 ## Sample Payloads
+
 - **Register**
 
 POST /api/v1/userauth/register
@@ -69,6 +75,7 @@ POST /api/v1/userauth/register
   "gender": "female",
   "phoneNumber": "08098765432"
 }
+
 - **Login**
 
 POST /api/v1/userauth/login
@@ -76,16 +83,21 @@ POST /api/v1/userauth/login
   "email": "amokegadus@gmail.com",
   "password": "P@ssw0rd457"
 }
+
 ---
+
 ## Security
 - **Passwords are securely hashed using BCrypt Algorithm to overide the default ASP.NET Identity Password Harsher**
 - **JWT tokens are signed with HMAC-SHA256 and have expiration**
 - **Endpoints are protected using [Authorize] middleware**
 
+---
+
 ## Testing
 - **Use Swagger UI or Postman to register/login users**
 
 ---
+
 ## Technologies Used
 - **.NET 8**
 - **ASP.NET Core Web API**
@@ -96,6 +108,8 @@ POST /api/v1/userauth/login
 - **Dependency Injection**
 - **BCypt Hash Algorithm**
 - **Repository Pattern**
+  
+---
 
 ## Contribution
 - **Fork this repo**
@@ -107,9 +121,12 @@ POST /api/v1/userauth/login
 - **Push to the branch (git push origin feature/your-feature)**
 
 - **Create a new Pull Request**
+---
 
 ## License
 This project is open-source and available under the MIT License.
+
+---
 
 ## Acknowledgements
 The project was designed and developed by a Senior Backend Developer with a focus on Clean architecture, security, and scalability.
