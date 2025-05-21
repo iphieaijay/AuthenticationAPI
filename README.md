@@ -25,6 +25,18 @@ This project contains the following layers:
 - **Infrastructure Layer(Auth.Infrastructure)**: EF Core, ASP.NET Identity, JWT logic
 
 ---
+
+## Project Structure
+
+/AuthenticationAPI
+
+├── Auth.Domain # Domain models and interfaces
+├── Auth.Application # Business logic, DTOs, services
+├── Auth.Infrastructure # EF Core + Identity + JWT
+└── Auth.API # Controllers, Program.cs, middleware
+
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -111,7 +123,10 @@ POST /api/v1/userauth/login
   
 ---
 
-## Contribution
+## Contribution 
+
+To contribute to this project, follow the steps below:
+
 - **Fork this repo**
 
 - **Create a feature branch (git checkout -b feature/your-feature)**
