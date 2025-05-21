@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Auth.API.Controllers
 {
-    [Route("api/userauth")]
+    [Route("api/v1/userauth")]
     [ApiController]
     public class UserAuthenticationController : ControllerBase
     {
