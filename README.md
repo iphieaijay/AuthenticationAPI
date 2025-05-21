@@ -17,7 +17,7 @@ This project is a clean, secure **Authentication Microservice** built using **.N
 ---
 ## Onion Architecture Overview
 Onion Architecture in .NET 8 offers a thoughtful way to organize your code by putting what matters most—your core business rules—right at the heart of the application. Around that core, you build clean, logical layers like Application, Infrastructure, and Presentation, each one depending only on the layer beneath it. This setup makes your code easier to test, easier to maintain, and far more flexible when changes come. With .NET 8's modern tools like minimal APIs, built-in dependency injection, and streamlined service registration, Onion Architecture fits naturally, helping you build robust and scalable microservices without tying your core logic to any specific database, UI, or external tool.
-For the project, we have the following layers: 
+This project contains the following layers: 
 - **Presentation Layer (Auth.API)** : ASP.NET Web API (controllers)
 - **Application Layer (Auth.Application)** : Services, DTOs, Interfaces
 - **Domain Layer (Auth.Domain)**:Entities, Interfaces (pure business logic)
