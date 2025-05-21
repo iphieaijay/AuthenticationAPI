@@ -26,8 +26,8 @@ This project contains the following layers:
 ## API Endpoints
 | Method | Route              | Description                    |
 | ------ | ------------------ | ------------------------------ |
-| POST   | /api/auth/register | Register new user              |
-| POST   | /api/auth/login    | Login and receive JWT          |
+| POST   | /api/v1/userauth/register | Register new user              |
+| POST   | /api/v1/userauth/login    | Login and receive JWT          |
 | |
 
 ---
