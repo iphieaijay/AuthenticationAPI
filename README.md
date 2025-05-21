@@ -12,7 +12,8 @@ This project is a clean, secure **Authentication Microservice** built using **.N
 - **Onion Architecture** for clean separation of concerns
 - **Repository Pattern** for testable and abstracted data access
 - **Dependency Injection** throughout the application
-- Built with **.NET 8** and **ASP.NET Core Web API**
+- **FluentValidation** for model Validation
+- Built with **.NET 8 class libraaries and Web API** 
 
 ---
 ## Onion Architecture Overview
@@ -22,24 +23,93 @@ This project contains the following layers:
 - **Application Layer (Auth.Application)** : Services, DTOs, Interfaces
 - **Domain Layer (Auth.Domain)**:Entities, Interfaces (pure business logic)
 - **Infrastructure Layer(Auth.Infrastructure)**: EF Core, ASP.NET Identity, JWT logic
+
 ---
+
+## Project Structure
+
+/AuthenticationAPI
+
+├── Auth.Domain # Domain models and interfaces
+├── Auth.Application # Business logic, DTOs, services
+├── Auth.Infrastructure # EF Core + Identity + JWT
+└── Auth.API # Controllers, Program.cs, middleware
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [.NET 8 SDK](https://dotnet.microsoft.com/download)
+- Visual Studio 2022+ IDE or VS Code or Cursor editors
+- Postman or Swagger for testing
+If you're testing on Postman, import the shared collection into Postman, copy the sample Payloads from this documentation, run the cloned project to start testing.
+
+---
+
+### Clone the Repository
+
+
+git clone https://github.com/your-username/AuthenticationAPI.git
+cd AuthenticationAPI
+
+---
+
+## Run this project
+
+You can run this project by running the code below:
+
+dotnet run --project Auth.API
+Navigate to https://localhost:7291/swagger/index.html on your browser to explore the API.
+
+---
+
 ## API Endpoints
+
 | Method | Route              | Description                    |
 | ------ | ------------------ | ------------------------------ |
-| POST   | /api/auth/register | Register new user              |
-| POST   | /api/auth/login    | Login and receive JWT          |
+| POST   | /api/v1/userauth/register | Register new user              |
+| POST   | /api/v1/userauth/login    | Login and receive JWT          |
 | |
 
 ---
+## Sample Payloads
+
+- **Register**
+
+POST /api/v1/userauth/register
+{
+  "firstName": "Amoke",
+  "lastName": "Gadus",
+  "email": "amokegadus@gmail.com",
+  "password": "P@ssw0rd457",
+  "gender": "female",
+  "phoneNumber": "08098765432"
+}
+
+- **Login**
+
+POST /api/v1/userauth/login
+{
+  "email": "amokegadus@gmail.com",
+  "password": "P@ssw0rd457"
+}
+
+---
+
 ## Security
 - **Passwords are securely hashed using BCrypt Algorithm to overide the default ASP.NET Identity Password Harsher**
 - **JWT tokens are signed with HMAC-SHA256 and have expiration**
 - **Endpoints are protected using [Authorize] middleware**
 
+---
+
 ## Testing
 - **Use Swagger UI or Postman to register/login users**
 
 ---
+
 ## Technologies Used
 - **.NET 8**
 - **ASP.NET Core Web API**
@@ -50,3 +120,28 @@ This project contains the following layers:
 - **Dependency Injection**
 - **BCypt Hash Algorithm**
 - **Repository Pattern**
+  
+---
+
+## Contribution 
+
+To contribute to this project, follow the steps below:
+
+- **Fork this repo**
+
+- **Create a feature branch (git checkout -b feature/your-feature)**
+
+- **Commit your changes (git commit -am 'Add new feature')**
+
+- **Push to the branch (git push origin feature/your-feature)**
+
+- **Create a new Pull Request**
+---
+
+## License
+This project is open-source and available under the MIT License.
+
+---
+
+## Acknowledgements
+The project was designed and developed by a Senior Backend Developer with a focus on Clean architecture, security, and scalability.
