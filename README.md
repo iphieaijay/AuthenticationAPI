@@ -40,7 +40,7 @@ If you're testing on Postman, import the shared collection into Postman, copy th
 
 ```bash
 git clone https://github.com/your-username/AuthenticationAPI.git
-cd AuthSystem
+cd AuthenticationAPI
 
 ---
 ## Run this project
@@ -48,6 +48,7 @@ cd AuthSystem
 You can run this project by running the code below:
 
 dotnet run --project Auth.API
+Navigate to https://localhost:7291/swagger/index.html on your browser to explore the API.
 
 ---
 ## API Endpoints
@@ -63,20 +64,19 @@ dotnet run --project Auth.API
 
 POST /api/v1/userauth/register
 {
-  "firstname": "Amoke",
-  "last name" : "Gadus",
+  "firstName": "Amoke",
+  "lastName": "Gadus",
   "email": "amokegadus@gmail.com",
-  "password": "P@ssw0rd123",
-  "phoneNumber": "08012345678",
+  "password": "P@ssw0rd457",
   "gender": "female",
+  "phoneNumber": "08098765432"
 }
-
 - **Login**
 
 POST /api/v1/userauth/login
 {
   "email": "amokegadus@gmail.com",
-  "password": "P@ssw0rd123"
+  "password": "P@ssw0rd457"
 }
 ---
 ## Security
