@@ -112,4 +112,4 @@ POST /api/v1/userauth/login
 This project is open-source and available under the MIT License.
 
 ## Acknowledgements
-The project was designed and developed by a me, Senior Backend Developer with a focus on clean architecture, security, and scalability.
+The project was designed and developed by a Senior Backend Developer with a focus on Clean architecture, security, and scalability.
