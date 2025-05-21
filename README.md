@@ -31,7 +31,7 @@ This project contains the following layers:
 | |
 ---
 ## Sample Payloads
--**Register**
+- **Register**
 
 POST /api/v1/userauth/register
 {
@@ -43,7 +43,8 @@ POST /api/v1/userauth/register
   "gender": "female",
 }
 
--**Login**
+- **Login**
+
 POST /api/v1/userauth/login
 {
   "email": "amokegadus@gmail.com",
