@@ -27,7 +27,8 @@ This project contains the following layers:
 
 You can run this project by running the code below:
 
-dotnet run --project AuthSystem.WebAPI
+dotnet run --project Auth.API
+
 ---
 ## API Endpoints
 
