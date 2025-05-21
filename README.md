@@ -21,3 +21,4 @@ Presentation Layer → ASP.NET Web API (UI, controllers)
 Application Layer → Services, DTOs, Contracts
 Domain Layer → Entities, Interfaces (pure business logic)
 Infrastructure Layer → EF Core, ASP.NET Identity, JWT logic
+
