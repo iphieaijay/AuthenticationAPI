@@ -23,6 +23,14 @@ This project contains the following layers:
 - **Domain Layer (Auth.Domain)**:Entities, Interfaces (pure business logic)
 - **Infrastructure Layer(Auth.Infrastructure)**: EF Core, ASP.NET Identity, JWT logic
 ---
+## API Endpoints
+| Method | Route              | Description                    |
+| ------ | ------------------ | ------------------------------ |
+| POST   | /api/auth/register | Register new user              |
+| POST   | /api/auth/login    | Login and receive JWT          |
+| |
+
+---
 ## Security
 - **Passwords are securely hashed using BCrypt Algorithm to overide the default ASP.NET Identity Password Harsher**
 - **JWT tokens are signed with HMAC-SHA256 and have expiration**
@@ -30,3 +38,15 @@ This project contains the following layers:
 
 ## Testing
 - **Use Swagger UI or Postman to register/login users**
+
+---
+## Technologies Used
+- **.NET 8**
+- **ASP.NET Core Web API**
+- **ASP.NET Identity**
+- **JWT Authentication**
+- **Entity Framework Core**
+- **Onion Architecture**
+- **Dependency Injection**
+- **BCypt Hash Algorithm**
+- **Repository Pattern**
