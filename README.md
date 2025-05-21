@@ -12,7 +12,8 @@ This project is a clean, secure **Authentication Microservice** built using **.N
 - **Onion Architecture** for clean separation of concerns
 - **Repository Pattern** for testable and abstracted data access
 - **Dependency Injection** throughout the application
-- Built with **.NET 8** and **ASP.NET Core Web API**
+- **FluentValidation** for model Validation
+- Built with **.NET 8 class libraaries and Web API** 
 
 ---
 ## Onion Architecture Overview
@@ -24,9 +25,6 @@ This project contains the following layers:
 - **Infrastructure Layer(Auth.Infrastructure)**: EF Core, ASP.NET Identity, JWT logic
 
 ---
-
----
-
 ## Getting Started
 
 ### Prerequisites
