@@ -96,3 +96,20 @@ POST /api/v1/userauth/login
 - **Dependency Injection**
 - **BCypt Hash Algorithm**
 - **Repository Pattern**
+
+## Contribution
+- **Fork this repo**
+
+- **Create a feature branch (git checkout -b feature/your-feature)**
+
+- **Commit your changes (git commit -am 'Add new feature')**
+
+- **Push to the branch (git push origin feature/your-feature)**
+
+- **Create a new Pull Request**
+
+## License
+This project is open-source and available under the MIT License.
+
+## Acknowledgements
+The project was designed and developed by a me, Senior Backend Developer with a focus on clean architecture, security, and scalability.
