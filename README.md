@@ -23,7 +23,14 @@ This project contains the following layers:
 - **Domain Layer (Auth.Domain)**:Entities, Interfaces (pure business logic)
 - **Infrastructure Layer(Auth.Infrastructure)**: EF Core, ASP.NET Identity, JWT logic
 ---
+##Run this project
+
+You can run this project by running the code below:
+
+dotnet run --project AuthSystem.WebAPI
+---
 ## API Endpoints
+
 | Method | Route              | Description                    |
 | ------ | ------------------ | ------------------------------ |
 | POST   | /api/v1/userauth/register | Register new user              |
