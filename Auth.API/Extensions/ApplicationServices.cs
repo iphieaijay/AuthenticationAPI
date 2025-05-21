@@ -118,9 +118,9 @@ namespace Auth.API.Extensions
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "User Authentication System",
+                    Title = "Authentication API",
                     Version = "v1",
-                    Description = "User Authentication System",
+                    Description = "Authentication API",
                     Extensions = { ["openapi"] = new Microsoft.OpenApi.Any.OpenApiString("3.0.1") }
                 });
 
