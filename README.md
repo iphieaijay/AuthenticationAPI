@@ -22,6 +22,26 @@ This project contains the following layers:
 - **Application Layer (Auth.Application)** : Services, DTOs, Interfaces
 - **Domain Layer (Auth.Domain)**:Entities, Interfaces (pure business logic)
 - **Infrastructure Layer(Auth.Infrastructure)**: EF Core, ASP.NET Identity, JWT logic
+
+---
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [.NET 8 SDK](https://dotnet.microsoft.com/download)
+- Visual Studio 2022+ IDE or VS Code or Cursor editors
+- Postman or Swagger for testing
+If you're testing on Postman, import the shared collection into Postman, copy the sample Payloads from this documentation, run the cloned project to start testing.
+
+### 📥 Clone the Repository
+
+```bash
+git clone https://github.com/your-username/AuthenticationAPI.git
+cd AuthSystem
+
 ---
 ## Run this project
 
