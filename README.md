@@ -29,7 +29,26 @@ This project contains the following layers:
 | POST   | /api/v1/userauth/register | Register new user              |
 | POST   | /api/v1/userauth/login    | Login and receive JWT          |
 | |
+---
+## Sample Payloads
+-**Register**
 
+POST /api/v1/userauth/register
+{
+  "firstname": "Amoke",
+  "last name" : "Gadus",
+  "email": "amokegadus@gmail.com",
+  "password": "P@ssw0rd123",
+  "phoneNumber": "08012345678",
+  "gender": "female",
+}
+
+-**Login**
+POST /api/v1/userauth/login
+{
+  "email": "amokegadus@gmail.com",
+  "password": "P@ssw0rd123"
+}
 ---
 ## Security
 - **Passwords are securely hashed using BCrypt Algorithm to overide the default ASP.NET Identity Password Harsher**
