@@ -14,3 +14,10 @@ This project is a clean, secure **Authentication Microservice** built using **.N
 - **Dependency Injection** throughout the application
 - Built with **.NET 8** and **ASP.NET Core Web API**
 
+---
+## Onion Architecture Overview
+
+Presentation Layer → ASP.NET Web API (UI, controllers)
+Application Layer → Services, DTOs, Contracts
+Domain Layer → Entities, Interfaces (pure business logic)
+Infrastructure Layer → EF Core, ASP.NET Identity, JWT logic
